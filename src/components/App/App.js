@@ -1,12 +1,22 @@
-import React from 'react';
-import Counter from '../Counter';
-import Random from '../Random';
-import classes from './App.module.css';
+import React from 'react'
+import Navigation from '../Navigation/Navigation.jsx'
+import Footer from '../Footer/Footer.jsx'
+import Ideas from '../Ideas/Ideas.jsx'
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
+
 
 const App = () => (
-  <div className={classes.container}>
-    <Counter />
-    <Random />
+  <div>
+    <Navigation />
+    <BrowserRouter>
+      <Route path="/" exact>
+        <Redirect to="/projects" />
+      </Route>
+      <Route path="/ideas">
+        <Ideas />
+      </Route>
+    </BrowserRouter>
+    <Footer />
   </div>
 );
 
