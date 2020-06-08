@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
     return <footer>
-        im footer
+        <h5>Torque © 2020</h5>
     </footer>
 }
 
