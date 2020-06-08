@@ -2,7 +2,10 @@ import React from 'react'
 import './App.css'
 import Navigation from '../Navigation/Navigation.jsx'
 import Footer from '../Footer/Footer.jsx'
+import Projects from '../Projects/Projects.jsx'
 import Ideas from '../Ideas/Ideas.jsx'
+import Login from '../Login/Login.jsx'
+import Register from '../Register/Register.jsx'
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
 
 
@@ -14,14 +17,17 @@ const App = () => (
         <Route path="/" exact>
           <Redirect to="/projects" />
         </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
         <Route path="/ideas">
           <Ideas />
         </Route>
         <Route path="/login">
-          <Ideas />
+          <Login />
         </Route>
         <Route path="/register">
-          <Ideas />
+          <Register />
         </Route>
       </BrowserRouter>
     </div>

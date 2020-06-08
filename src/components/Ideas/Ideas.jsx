@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Ideas() {
-    return <div>test</div>
+    return <div>Ideas Page</div>
 }
 
 export default Ideas;
