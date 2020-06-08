@@ -4,7 +4,7 @@ import './Navigation.css';
 function Navigation() {
     return <nav className="row">
         <div className="nav-logo">
-            <h1>Torque</h1>
+            <h1>Tørque</h1>
         </div>
         <div className="nav">
             <a href="/projects">PROJECTS</a>
